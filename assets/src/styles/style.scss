@@ -1,0 +1,181 @@
+@import "./components/variables";
+@import "./components/mixin.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Oswald;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// header
+.header {
+    &__line--icons {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        margin-bottom: 112px;
+    }
+    &__fons--img {
+        background-size: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: -10;
+    }
+    &__title--style {
+        max-width: 734px;
+        margin: 0 auto;
+    }
+            &__-h1--style {
+                @include text (64px,normal,95px,center,$color-first-base);
+            }
+        &__title-span--style {
+            margin-bottom: 176px;
+        }
+            &__span--style {
+                @include text (18px,normal,27px,center,$color-first-base);
+                display: inherit;
+            }
+}
+//section-1
+.section-first {
+    &__wrapper-1--grid {
+        background-color: $color-lightgray;
+        display: grid;
+        grid-template-columns: repeat( 4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 0px;
+    }
+        &__box-presentation {
+            display: inherit;
+            width: 190px;
+            margin: 57px 0;
+        }
+        &__box-presentation:first-child {
+            margin-left: 130px;
+        }
+        &__box-presentation:last-child {
+            margin-right: 130px;
+        }
+            &__span-1 {
+                @include text (72px,normal,107px,center,$color-accent);
+            }
+            &__span-2 {
+                @include text (36px,normal,53px,center,$color-second-base);
+            }
+            &__span-3 {
+                @include text (18px,normal,27px,center,$color-gray);
+            }
+    &__headline--style {
+        margin: 100px 0 60px 0;        
+    }
+        &__h2--style {
+            @include text (36px,normal,53px,center,$color-dark);
+        }
+    &__wrapper--flex {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 150px;
+    }
+        &__box-line {
+            width: 55px;
+            height: 6px;
+            margin: 45px 0 5px 0;
+            background-color: $color-accent;
+        }
+        &__box-h3--style {
+            @include text (24px,normal,36px,left,$color-dark);
+            margin: 10px 0;
+        }
+        &__box-p--style {
+            @include text (16px,normal,22px,left,$color-gray);
+            text-align: left;
+            margin: 10px 0;
+        }
+    }
+//section-2
+.section-second {
+    background-color: $color-accent;
+        &__wrapper--flex {
+            display: flex;
+            justify-content: space-between
+        }
+            &__info--inline-block {
+                display: inline-block;
+            }
+                &__span-1--style {
+                    @include text (48px,normal,71px,left,$color-first-base);
+                    display: block;
+                    margin: 30px 0 20px 0;
+                }
+                &__span-2--style {
+                    @include text (24px,normal,36px,left,$color-first-base);
+                    display: block;
+                    margin-bottom: 45px;
+                }
+            &__form-btn--btn {
+                display: inline-block;
+                margin: auto 0;
+                position: relative;
+            }
+                &__button-1--btn {
+                    @include text (14px,normal,21px,left,$color-second-base);
+                    background-color: $color-first-base;
+                    padding: 14px 30px 14px 63px;
+                    border: none;
+                }
+                &__from-img--icon {
+                    position: absolute;
+                    left: 30px;
+                    top: 17px;
+                }
+}
+//section-3
+.section-third {
+    &__h2--stile {
+        text-align: center;
+    }
+        &__text-h2--style {
+            @include text (36px,normal,53px,center,$color-second-base);
+            margin: 150px 0 66px 0;
+        }
+    &__wrapper-2--grid {
+        display: grid;
+        grid-template-columns: repeat( 3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+        &__box-third {
+            padding: 59px 92px 59px 86px;
+        }
+            &__icon--flex{
+                display: flex;
+                justify-content: center;
+                padding-bottom: 30px;
+            }
+            &__h4--style {
+                @include text (21px,normal,32px,center,$color-second-base);
+            }
+}
+.footer {
+    background-color: $color-dark;
+    &__text--style {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+        &__p--style {
+            @include text (16px,normal,22px,center,$color-first-base);
+        }
+}
