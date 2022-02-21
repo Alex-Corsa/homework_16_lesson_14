@@ -18,11 +18,19 @@ body {
 // header
 .header {
     &__line--icons {
+        max-width: 1110px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
-        margin-bottom: 112px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
     }
+        &__line--menu {
+            margin-top: 5px;
+        }
     &__fons--img {
         background-size: 100%;
         position: absolute;
@@ -33,17 +41,18 @@ body {
     }
     &__title--style {
         max-width: 734px;
-        margin: 0 auto;
+        margin: 192px auto auto;
     }
             &__-h1--style {
                 @include text (64px,normal,95px,center,$color-first-base);
             }
         &__title-span--style {
             margin-bottom: 176px;
+            text-align: center;
         }
             &__span--style {
                 @include text (18px,normal,27px,center,$color-first-base);
-                display: inherit;
+                // display: inherit;
             }
 }
 //section-1
