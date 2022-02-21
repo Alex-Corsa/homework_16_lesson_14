@@ -1,12 +1,16 @@
 @import "./components/variables";
 @import "./components/mixin.scss";
 
+%OpenSans{
+    font-family: Open+Sans;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Oswald;
+    font-family: Oswald;    
 }
 
 .container {
@@ -22,16 +26,15 @@ button {
 
 // header
 .header {
-    &__line--icons {
-        max-width: 1110px;
-        margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    &__line--icons {        
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
     }
         &__line--menu {
             margin-top: 5px;
@@ -52,17 +55,10 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    // &__fons--img {
-    //     background-size: 100%;
-    //     position: absolute;
-    //     left: 0;
-    //     top: 0;
-    //     right: 0;
-    //     z-index: -10;
-    // }
     &__title--title-first {
         max-width: 734px;
         margin: 0 auto;
+        padding-top: 192px;
     }
             &__-h1--style {
                 @include text (64px,normal,95px,center,$color-first-base);
@@ -81,6 +77,7 @@ button {
         grid-template-rows: repeat(1, 1fr);
         grid-column-gap: 30px;
         grid-row-gap: 0px;
+        transform: translateY(50%);
     }
         &__box-presentation {
             display: inherit;
@@ -107,7 +104,7 @@ button {
 //section-2
 .section-second {
     &__headline--style {
-        margin: 100px 0 60px 0;        
+        margin: 250px 0 60px 0;        
     }
         &__h2--style {
             @include text (36px,normal,53px,center,$color-dark);
@@ -132,6 +129,7 @@ button {
         }
         &__box-p--style {
             @include text (16px,normal,22px,left,$color-gray);
+            @extend %OpenSans;
             text-align: left;
             margin: 10px 0;
         }
@@ -212,5 +210,6 @@ button {
     }
         &__p--style {
             @include text (16px,normal,22px,center,$color-first-base);
+            @extend %OpenSans;
         }
 }

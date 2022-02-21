@@ -1,3 +1,7 @@
+.footer__p--style, .section-second__box-p--style {
+  font-family: OpenSans;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -17,16 +21,17 @@ button {
   outline: none;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
 .header__line--icons {
-  max-width: 1110px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
 }
 .header__line--menu {
   margin-top: 5px;
@@ -49,6 +54,7 @@ button {
 .section-first__title--title-first {
   max-width: 734px;
   margin: 0 auto;
+  padding-top: 192px;
 }
 .section-first__-h1--style {
   font-size: 64px;
@@ -75,6 +81,7 @@ button {
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 0px;
+  transform: translateY(50%);
 }
 .section-first__box-presentation {
   display: inherit;
@@ -110,7 +117,7 @@ button {
 }
 
 .section-second__headline--style {
-  margin: 100px 0 60px 0;
+  margin: 250px 0 60px 0;
 }
 .section-second__h2--style {
   font-size: 36px;
