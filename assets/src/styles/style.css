@@ -12,6 +12,11 @@ body {
   padding: 0 15px;
 }
 
+button {
+  border: none;
+  outline: none;
+}
+
 .header__line--icons {
   max-width: 1110px;
   margin: 0 auto;
@@ -26,37 +31,43 @@ body {
 .header__line--menu {
   margin-top: 5px;
 }
-.header__fons--img {
-  background-size: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: -10;
+.header__button--menu {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../images/1-Header/header_menu-gamburger.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
-.header__title--style {
+
+.section-first {
+  background-image: url(../../images/1-Header/fon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.section-first__title--title-first {
   max-width: 734px;
-  margin: 192px auto auto;
+  margin: 0 auto;
 }
-.header__-h1--style {
+.section-first__-h1--style {
   font-size: 64px;
   font-style: normal;
   line-height: 95px;
   text-align: center;
   color: white;
 }
-.header__title-span--style {
+.section-first__title-span--style {
   margin-bottom: 176px;
   text-align: center;
 }
-.header__span--style {
+.section-first__span--style {
   font-size: 18px;
   font-style: normal;
   line-height: 27px;
   text-align: center;
   color: white;
 }
-
 .section-first__wrapper-1--grid {
   background-color: #F7F7F7;
   display: grid;
@@ -97,28 +108,32 @@ body {
   text-align: center;
   color: #999999;
 }
-.section-first__headline--style {
+
+.section-second__headline--style {
   margin: 100px 0 60px 0;
 }
-.section-first__h2--style {
+.section-second__h2--style {
   font-size: 36px;
   font-style: normal;
   line-height: 53px;
   text-align: center;
   color: #404149;
 }
-.section-first__wrapper--flex {
+.section-second__wrapper--flex {
   display: flex;
   justify-content: space-between;
   margin-bottom: 150px;
 }
-.section-first__box-line {
+.section-second__box-info {
+  max-width: 350px;
+}
+.section-second__box-line {
   width: 55px;
   height: 6px;
   margin: 45px 0 5px 0;
   background-color: #F7654A;
 }
-.section-first__box-h3--style {
+.section-second__box-h3--style {
   font-size: 24px;
   font-style: normal;
   line-height: 36px;
@@ -126,7 +141,7 @@ body {
   color: #404149;
   margin: 10px 0;
 }
-.section-first__box-p--style {
+.section-second__box-p--style {
   font-size: 16px;
   font-style: normal;
   line-height: 22px;
@@ -136,17 +151,17 @@ body {
   margin: 10px 0;
 }
 
-.section-second {
+.section-third {
   background-color: #F7654A;
 }
-.section-second__wrapper--flex {
+.section-third__wrapper--flex {
   display: flex;
   justify-content: space-between;
 }
-.section-second__info--inline-block {
+.section-third__info--inline-block {
   display: inline-block;
 }
-.section-second__span-1--style {
+.section-third__h2--style {
   font-size: 48px;
   font-style: normal;
   line-height: 71px;
@@ -155,7 +170,7 @@ body {
   display: block;
   margin: 30px 0 20px 0;
 }
-.section-second__span-2--style {
+.section-third__span-2--style {
   font-size: 24px;
   font-style: normal;
   line-height: 36px;
@@ -164,12 +179,12 @@ body {
   display: block;
   margin-bottom: 45px;
 }
-.section-second__form-btn--btn {
+.section-third__button-btn-2--btn {
   display: inline-block;
   margin: auto 0;
   position: relative;
 }
-.section-second__button-1--btn {
+.section-third__button-1--btn {
   font-size: 14px;
   font-style: normal;
   line-height: 21px;
@@ -179,16 +194,16 @@ body {
   padding: 14px 30px 14px 63px;
   border: none;
 }
-.section-second__from-img--icon {
+.section-third__from-img--icon {
   position: absolute;
   left: 30px;
   top: 17px;
 }
 
-.section-third__h2--stile {
+.section-fourth__h2--stile {
   text-align: center;
 }
-.section-third__text-h2--style {
+.section-fourth__text-h2--style {
   font-size: 36px;
   font-style: normal;
   line-height: 53px;
@@ -196,22 +211,24 @@ body {
   color: black;
   margin: 150px 0 66px 0;
 }
-.section-third__wrapper-2--grid {
+.section-fourth__wrapper-2--grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+  margin-bottom: 150px;
 }
-.section-third__box-third {
+.section-fourth__box-fourth {
+  background-color: #F7F7F7;
   padding: 59px 92px 59px 86px;
 }
-.section-third__icon--flex {
+.section-fourth__icon--flex {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
 }
-.section-third__h4--style {
+.section-fourth__h4--style {
   font-size: 21px;
   font-style: normal;
   line-height: 32px;

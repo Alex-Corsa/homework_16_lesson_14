@@ -15,6 +15,11 @@ body {
     padding: 0 15px;
 }
 
+button {
+    border: none;
+    outline: none;
+}
+
 // header
 .header {
     &__line--icons {
@@ -31,17 +36,33 @@ body {
         &__line--menu {
             margin-top: 5px;
         }
-    &__fons--img {
-        background-size: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        z-index: -10;
-    }
-    &__title--style {
+        &__button--menu {
+            width: 50px;
+            height: 50px;
+            background-image: url(../../images/1-Header/header_menu-gamburger.png) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+        }
+}
+
+//section-1
+.section-first {
+    background-image: url(../../images/1-Header/fon.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    // &__fons--img {
+    //     background-size: 100%;
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+    //     right: 0;
+    //     z-index: -10;
+    // }
+    &__title--title-first {
         max-width: 734px;
-        margin: 192px auto auto;
+        margin: 0 auto;
     }
             &__-h1--style {
                 @include text (64px,normal,95px,center,$color-first-base);
@@ -52,11 +73,7 @@ body {
         }
             &__span--style {
                 @include text (18px,normal,27px,center,$color-first-base);
-                // display: inherit;
             }
-}
-//section-1
-.section-first {
     &__wrapper-1--grid {
         background-color: $color-lightgray;
         display: grid;
@@ -85,6 +102,10 @@ body {
             &__span-3 {
                 @include text (18px,normal,27px,center,$color-gray);
             }
+}
+
+//section-2
+.section-second {
     &__headline--style {
         margin: 100px 0 60px 0;        
     }
@@ -95,6 +116,9 @@ body {
         display: flex;
         justify-content: space-between;
         margin-bottom: 150px;
+    }
+    &__box-info {
+        max-width: 350px;
     }
         &__box-line {
             width: 55px;
@@ -112,8 +136,8 @@ body {
             margin: 10px 0;
         }
     }
-//section-2
-.section-second {
+//section-3
+.section-third {
     background-color: $color-accent;
         &__wrapper--flex {
             display: flex;
@@ -122,7 +146,7 @@ body {
             &__info--inline-block {
                 display: inline-block;
             }
-                &__span-1--style {
+                &__h2--style {
                     @include text (48px,normal,71px,left,$color-first-base);
                     display: block;
                     margin: 30px 0 20px 0;
@@ -132,7 +156,7 @@ body {
                     display: block;
                     margin-bottom: 45px;
                 }
-            &__form-btn--btn {
+            &__button-btn-2--btn {
                 display: inline-block;
                 margin: auto 0;
                 position: relative;
@@ -149,8 +173,8 @@ body {
                     top: 17px;
                 }
 }
-//section-3
-.section-third {
+//section-4
+.section-fourth {
     &__h2--stile {
         text-align: center;
     }
@@ -164,8 +188,10 @@ body {
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 30px;
         grid-row-gap: 30px;
+        margin-bottom: 150px;
     }
-        &__box-third {
+        &__box-fourth {
+            background-color: $color-lightgray;
             padding: 59px 92px 59px 86px;
         }
             &__icon--flex{
